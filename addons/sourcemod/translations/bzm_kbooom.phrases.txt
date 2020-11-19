@@ -1,0 +1,89 @@
+"Phrases"
+{
+	"Mother Protect Enabled"
+	{
+		"#format"		"{1:.0f}"
+		"en"		"{red}[ {green}KboooM {red}]{purple} Mother Protect Enabled {red}{1}{purple} Sec"
+	}
+
+	"Mother Protect finished Center"
+	{
+		"en"		"Mother Protect finished"
+	}
+
+	"Mother Protect finished Chat"
+	{
+		"en"		"{red}[ {green}KboooM {red}]{purple} Mother Protect finished"
+	}
+
+	"you will die"
+	{
+		"#format"		"{1:s},{2:.0f}"
+		"en"		"{red}[ {green}KboooM {red}]{purple} Was stabbed by {green}{1}{purple} :) you have {red}{2}{purple} seconds to pick up any human being or you will die!"
+	}
+
+	"Kill Zombie 1"
+	{
+		"#format"		"{1:s}"
+		"en"		"{red}[ {green}KboooM {red}]{purple} Congratulations {green}{1}{purple} :) Kill zombie!"
+	}
+
+	"Kill Zombie 2"
+	{
+		"#format"		"{1:s}"
+		"en"		"{red}[ {green}KboooM {red}]{green} {1}{purple} you, and fuck even!"
+	}
+
+	"Kill Zombie 3"
+	{
+		"#format"		"{1:s}"
+		"en"		"{red}[ {green}KboooM {red}]{purple} YOU LIKE RAMBO stabbed ATTACK YOUR OPPONENT {green}{1}{purple} !"
+	}
+
+	"Kill Zombie 4"
+	{
+		"#format"		"{1:s}"
+		"en"		"{red}[ {green}KboooM {red}]{purple} crazy Rambo you very cool es {green}{1}{purple} !"
+	}
+
+	"Kill Zombie 5"
+	{
+		"#format"		"{1:s}"
+		"en"		"{red}[ {green}KboooM {red}]{purple} putz was that {green}{1}{purple}!"
+	}
+
+	"Kill Zombie 6"
+	{
+		"#format"		"{1:s}"
+		"en"		"{red}[ {green}KboooM {red}]{purple} Congratulations you are Chuck Norris {green}{1}{purple}"
+	}
+
+	"Knife the first zombie"
+	{
+		"#format"		"{1:s}"
+		"en"		"{red}[ {green}KboooM {red}]{green}{1}{purple} He was punished for knife the first zombie!"
+	}
+
+	"Attacker the first zombie Chat"
+	{
+		"#format"		"{1:s}"
+		"en"		"{red}[ {green}KboooM {red}]{green}{1}{purple} He suffered the virus HIV ZOMBIE!"
+	}
+
+	"Attacker the first zombie Center"
+	{
+		"#format"		"{1:s}"
+		"en"		"{1} He suffered the virus HIV ZOMBIE!"
+	}
+
+	"You have saved"
+	{
+		"en"		"{red}[ {green}KboooM {red}]{purple} You have caught a human then you have saved!"
+	}
+
+	"Disconnect"
+	{
+		"#format"		"{1:s}"
+		"en"		"{red}[ {green}KboooM {red}]{purple} The player {green}{1}{purple} He left because he's an asshole!"
+	}
+}
