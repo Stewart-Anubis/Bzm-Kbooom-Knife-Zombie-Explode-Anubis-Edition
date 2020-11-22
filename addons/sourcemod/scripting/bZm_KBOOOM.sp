@@ -356,6 +356,7 @@ public EnDamage(Handle:event, const String:name[], bool:dontBroadcast)
 
 		if(ZR_IsClientHuman(attacker) && ZR_IsClientZombie(client) && (contar))
 		{
+			if(h_etime[client] != INVALID_HANDLE) return;
 			new Float:vec[3];
 			GetClientAbsOrigin(client, vec);
 			if(StrEqual(weapon, "knife", false))
@@ -468,7 +469,7 @@ public Action:ByeZM(Handle:timer, Handle:pack)
 		EmitAmbientSoundAny(EXPLODE_SOUND, vec2, client, SNDLEVEL_NORMAL);
 
 		KillBeacon(client);
-
+		h_etime[client] = INVALID_HANDLE;
 		if (IsValidClient(attacker)){
 			DealDamage(client,vida,attacker,DMG_GENERIC," "); // enemy down ;)
 		}
