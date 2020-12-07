@@ -316,7 +316,7 @@ public OnClientDisconnect(client)
 	GetClientName(client, nome, sizeof(nome));
 	if(h_etime[client] != INVALID_HANDLE)
 	{
-		h_btime[client] = 0;
+		h_etime[client] = INVALID_HANDLE;
 		CPrintToChatAll("%t", "Disconnect", nome);
 		if(sounds_punish)	EmitSoundToAllAny(zr_punishment3);
 	}
@@ -392,7 +392,7 @@ public EnDamage(Handle:event, const String:name[], bool:dontBroadcast)
 				}
 				h_btime[client] = ++g_Serial_Gen;
 				CreateTimer(0.5, Timer_Beacon, client | (g_Serial_Gen << 7), TIMER_REPEAT|TIMER_FLAG_NO_MAPCHANGE);
-				h_etime[client] = CreateDataTimer(time_explod, ByeZM, pack);
+				h_etime[client] = CreateDataTimer(time_explod, ByeZM, pack, TIMER_FLAG_NO_MAPCHANGE);
 				WritePackCell(pack, client);
 				WritePackCell(pack, attacker);
 			}
@@ -431,7 +431,8 @@ public Action:ZR_OnClientInfect(&client, &attacker, &bool:motherInfect, &bool:re
 	{
 		g_ZombieExplode[attacker] = false;
 		CPrintToChat(attacker, "%t", "You have saved");
-		h_btime[attacker] = 0;
+		h_etime[attacker] = INVALID_HANDLE;
+		KillBeacon(attacker);
 	}
 	return Plugin_Continue;
 }
