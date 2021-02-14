@@ -8,7 +8,7 @@
 * Sorry for my English.
 
 * Author Franug, Amauri Bueno dos Santos, Anubis Edition
-* Version = 3.2-A, Anubis edition
+* Version = 3.2-B, Anubis edition
 
 ### Decription:Bzm-Kbooom-Knife-Zombie-Explode-Anubis-Edition
 
@@ -18,6 +18,9 @@
 * Effects and Sounds, to spice up the game.
 * Explode Zombie Beacon.
 * Recommended for ZM maps.
+* Add Volume of sounds
+* Add Explosion volume.
+* new syntax!
 
 ### Server ConVars
 
@@ -31,3 +34,5 @@
 * sm_kbooom_tmprotect - Seconds mother protect. Dependence sm_kbooom_mprotect Enable.
 * sm_kbooom_explode - Seconds that zombie have for catch to humans.
 * sm_kbooom_knife_sound - Stab victory sound.
+* sm_kbooom_volume_sounds - Volume of sounds.
+* sm_kbooom_volume_explod - Explosion volume.
