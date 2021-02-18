@@ -527,7 +527,8 @@ public Action PlayerSpawn(Handle event, const char[] name, bool dontBroadcast)
 	int client = GetClientOfUserId(GetEventInt(event, "userid"));
 	KillBeacon(client);
 	g_ZombieExplode[client] = false;
-	if(ZR_IsClientZombie(client))
+
+	if(IsValidClient(client) && ZR_IsClientZombie(client))
 	{
 		contar = true;
 	}
